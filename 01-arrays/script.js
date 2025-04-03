@@ -18,7 +18,7 @@ const firstTeacher = teachers.shift();
 console.log(firstTeacher);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
-teachers.push("vanessa");
+teachers.push("Vanessa");
 console.log(teachers);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
@@ -32,11 +32,5 @@ console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = teachers.length;
-for (let i = 0; i <= teachers.length; i++) {
-  if (isTeachersEmpty.length === 0) {
-    console.log("array è vuoto");
-  } else {
-    console.log("array non è vuoto");
-  }
-}
+const isTeachersEmpty = teachers.length > 0;
+console.log(isTeachersEmpty);
